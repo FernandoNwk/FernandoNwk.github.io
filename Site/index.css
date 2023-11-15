@@ -1,0 +1,236 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html{
+    font-family: 'Kdam Thmor Pro';
+    width: 100vw;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-inline: 5%;
+
+}
+
+.fundo-site {
+    /* background-color: aqua; */
+    width: 100%;
+    flex: 1;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    font-family: 'Kdam Thmor Pro';
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.navegacao{
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.carrinho, .instagram {
+    width: 20px;
+    height: 20px;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+.pagina-principal-texto{
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+h1 {
+    padding: 30px;
+}
+a,
+a:visited,
+a:active {
+    color:black;
+  text-decoration: none;
+}
+
+.foto-destaque{
+    flex: 1;
+    object-fit: contain;
+    max-height: 600px;
+}
+
+.loja-conteudo{
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: row;
+    gap:150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.loja-esquerdo {
+    width: 25%;
+}
+
+.loja-direito {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(2, 300px);
+    gap: 30px;
+}
+
+.img-modelo{
+    height: 100%;
+}
+
+.img-produto {
+    width: 400px;
+    height: 250px;
+}
+
+
+.pagina-sobrenos{
+    display: flex;
+    flex-direction: row;    
+    gap: 150px;
+    justify-content: center;
+}
+.sobrenos-esquerdo {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobrenos-direito {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    align-self: center;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  input {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  video{
+    height: 700px;
+  }
+
+  .detalhado-produto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+  }
+
+  .imagens-produto {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 300px);
+    gap: 30px;
+    align-items: center;
+  }
+
+  .informacoes-produto {
+    padding-top: 200px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .tamanhos {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .tam{
+    border: 1px solid black;
+    padding: 10px;
+  }
+
+.button-style {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-style:focus {
+  text-decoration: none;
+}
+
+.button-style:hover {
+  text-decoration: none;
+}
+
+.button-style:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-style:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-style {
+    padding: 12px 50px;
+  }
+}
